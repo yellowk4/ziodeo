@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>지오데오</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width=device-width, maximum-scale = 1, minimum-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="여성의류 전문 브랜드, 당신을 위한 매일 새로운 스타일" />
+
+    <link rel="stylesheet" type="text/css" href="/css/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/css/colorbox.css" media="all" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!--<script src="js/default.js"></script>-->
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+    <script src="/js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/vendor/masonry.pkgd.min.js"></script>
+    <script src="/js/vendor/jquery.colorbox-min.js"></script>
+    <script src="/js/gallery.js"></script>
+
+	<script>
+		$(function(){
+      			//Keep track of last scroll
+      			var lastScroll = 0;
+      			$(window).scroll(function(event){
+          			//Sets the current scroll position
+          			var st = $(this).scrollTop();
+          			//Determines up-or-down scrolling
+          			if (st > lastScroll){
+             			//Replace this with your function call for downward-scrolling
+             			console.log("DOWN");
+				$(".header").css({ "position" : "fixed" });
+          			}
+          			else {
+             			//Replace this with your function call for upward-scrolling
+             			console.log("UP");
+          			}
+          			//Updates scroll position
+          			lastScroll = st;
+      			});
+    		});
+	</script>
+</head>
+<body class="bgsub">
+    <div id="">
+        <!--헤더-->
+        <header class="header">
+            <h1><a href="/index.html">ZIODEO <span>A NEW STYLE FOR YOU EVERY DAY</span></a></h1>
+            <ul>
+                <li><a href="/html/about.html">About us</a></li>
+                <li><a href="/html/collection.html">Collection</a></li>
+                <li><a href="/html/shop.html">Shop info</a></li>
+                <li><a href="/html/faq.html">FAQ</a></li>
+            </ul>
+        </header>
+        <!--//헤더-->
+
+        <!--본문-->
+        <div id="content">
+            <form class="filter-form" id="gallery-filter">
+                <span class="form-item">
+                    <input type="radio" name="filter" id="filter-all" value="all" checked>
+                    <label for="filter-all">All</label>
+                </span>
+                <span class="form-item">
+                    <input type="radio" name="filter" id="filter-people" value="people">
+                    <label for="filter-people">People</label>
+                </span>
+                <span class="form-item">
+                    <input type="radio" name="filter" id="filter-animals" value="animals">
+                    <label for="filter-animals">Animals</label>
+                </span>
+                <span class="form-item">
+                    <input type="radio" name="filter" id="filter-nature" value="nature">
+                    <label for="filter-nature">Nature</label>
+                </span>
+                <span class="form-item">
+                    <input type="radio" name="filter" id="filter-plantes" value="plantes">
+                    <label for="filter-plantes">Plantes</label>
+                </span>
+                <span class="form-item">
+                    <input type="radio" name="filter" id="filter-architects" value="architects">
+                    <label for="filter-architects">Architects</label>
+                </span>
+            </form>
+
+            <ul class="gallery" id="gallery"></ul>
+            <button class="load-more" id="load-more">Load more</button>
+        </div>
+        <!--//본문-->
+
+        <!--푸터-->
+        <footer id="footer">
+            <!--<p class="copyright">Copyright ZIODEO co., ltd. All right reserved.</p>-->
+        </footer>
+        <!--//푸터-->
+    </div>
+</body>
+</html>
+
+
+
+
+
+

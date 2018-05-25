@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>지오데오</title>
+	<meta charset="utf-8" />
+    <META http-equiv="Expires" content="-1"> 
+    <META http-equiv="Pragma" content="no-cache"> 
+    <META http-equiv="Cache-Control" content="No-Cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width=device-width, maximum-scale = 1, minimum-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="여성의류 전문 브랜드, 매일 당신을 위한 새로운 스타일 , 숙녀복, 여성복, 30, 40대 캐주얼, 미시옷, 엄마옷, 데일리룩, 인견, 전국매장 안내" />
+
+    <meta property="og:title" content="지오데오">
+    <meta property="og:description" content="여성의류 전문 브랜드, 매일 당신을 위한 새로운 스타일 , 숙녀복, 여성복, 30, 40대 캐주얼, 미시옷, 엄마옷, 데일리룩, 인견, 전국매장 안내">
+
+    <link rel="canonical" href="http://www.ziodeo.com">
+
+    <link rel="stylesheet" type="text/css" href="/css/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/css/colorbox.css" media="all" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/js/ui.js"></script>
+    <!--<script src="js/default.js"></script>-->
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+    <!-- bxSlider Javascript file -->
+    <script src="/js/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/css/jquery.bxslider.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+
+	<script>
+		$(function(){
+      			//Keep track of last scroll
+      			var lastScroll = 0;
+      			$(window).scroll(function(event){
+          			//Sets the current scroll position
+          			var st = $(this).scrollTop();
+          			//Determines up-or-down scrolling
+          			if (st > lastScroll){
+             			//Replace this with your function call for downward-scrolling
+             			console.log("DOWN");
+				        $("#mo > header").removeClass("fixed");
+          			}
+          			else {
+             			//Replace this with your function call for upward-scrolling
+             			console.log("UP");
+                         $("#mo > header").addClass("fixed");
+          			}
+          			//Updates scroll position
+          			lastScroll = st;
+      			});
+
+				$('.bxslider').bxSlider({
+					pagerCustom: '#bx-pager'
+				});
+
+				//모바일 본문일 때
+                function open_chatroom(){
+                    var windowWidth = $( window ).width();
+                    if(windowWidth < 769) {
+                        console.log("mo");
+                        $("#content").removeClass();
+                        $("#content").addClass("mo");
+                    } else {
+                        console.log("pc");
+                        $("#content").removeClass();
+                        $("#content").addClass("pc");
+                    }
+                };
+                open_chatroom();
+
+    		});
+	</script>
+</head>
+<body class="bgsub">
+
+    <div id="pc">
+        <!--헤더-->
+        <header class="header">
+            <h1>
+                <a href="/index.html">
+                    <!--<span class="tit">Z &nbsp;I &nbsp;O &nbsp;D &nbsp;E &nbsp;O</span> 
+                        <span class="line">&nbsp;</span>
+                        <span class="txt">A NEW STYLE EVERY DAY</span> 
+                        <span class="since">SINCE 1980</span>-->
+                        <img src="/img/logo.png" alt=""/>
+                </a>
+            </h1>
+            <ul>
+                <li><a href="/html/about.html">About us</a></li>
+                <li><a href="/html/collection.html">Collection</a></li>
+                <li><a href="/html/shop.html">Shop info</a></li>
+                <li><a href="/html/faq.html">FAQ</a></li>
+            </ul>
+        </header>
+        <!--//헤더-->
+        <!--본문-->
+        <div id="content">
+            <div class="inner">
+                
+                
+                <p class="silverzd"><img src="/img/silverzd2017fw_03.jpg" alt=""/></p>
+                
+                <!-- Swiper -->
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c01.jpg)"></div><!--콜렉션 PC 큰이미지1-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c02.jpg)"></div><!--콜렉션 PC 큰이미지2-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c03.jpg)"></div><!--콜렉션 PC 큰이미지3-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c04.jpg)"></div><!--콜렉션 PC 큰이미지4-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c05.jpg)"></div><!--콜렉션 PC 큰이미지5-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c06.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c07.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c08.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c09.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c10.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c11.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c12.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c13.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c14.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c15.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c16.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c17.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c18.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c19.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c20.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c21.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c22.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c23.jpg)"></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-black"></div>
+                    <div class="swiper-button-prev swiper-button-black"></div>
+                </div>
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c0101.jpg)"></div><!--콜렉션 PC 작은이미지1-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c0202.jpg)"></div><!--콜렉션 PC 작은이미지2-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c0303.jpg)"></div><!--콜렉션 PC 작은이미지3-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c0404.jpg)"></div><!--콜렉션 PC 작은이미지4-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c0505.jpg)"></div><!--콜렉션 PC 작은이미지5-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c0606.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c0707.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c0808.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c0909.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c1010.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c1111.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c1212.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c1313.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c1414.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c1515.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c1616.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c1717.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c1818.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c1919.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c2020.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c2121.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c2222.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c2323.jpg)"></div>
+                    </div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="../dist/js/swiper.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                var galleryTop = new Swiper('.gallery-top', {
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    spaceBetween: 10,
+                });
+                var galleryThumbs = new Swiper('.gallery-thumbs', {
+                    spaceBetween: 10,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    touchRatio: 0.2,
+                    slideToClickedSlide: true
+                });
+                galleryTop.params.control = galleryThumbs;
+                galleryThumbs.params.control = galleryTop;
+                
+                </script>
+            </div>
+        </div>
+        <!--//본문-->
+    </div>
+
+    <div id="mo">
+        <!--헤더-->
+        <header class="header">
+            <h1>
+                <a href="/index.html">
+                    <img src="/img/logo.png" alt=""/>
+                </a>
+            </h1>
+            <ul>
+				<li class="on"><a href="/html/collection.html">Collection</a></li>
+                <li><a href="/html/about.html">About us</a></li>
+                <li><a href="/html/shop.html">Shop info</a></li>
+				<li><a href="/html/faq.html">FAQ</a></li>
+            </ul>
+        </header>
+        <!--//헤더-->
+        <!--본문-->
+        <div id="content">
+            <div class="inner">
+                
+                
+                <p class="silverzd"><img src="/img/silverzd2017fw_03.jpg" alt=""/></p>
+                
+                <!-- Swiper -->
+                <div class="swiper-container gallery-top two">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c01.jpg)"></div><!--콜렉션 PC 큰이미지1-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c02.jpg)"></div><!--콜렉션 PC 큰이미지2-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c03.jpg)"></div><!--콜렉션 PC 큰이미지3-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c04.jpg)"></div><!--콜렉션 PC 큰이미지4-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c05.jpg)"></div><!--콜렉션 PC 큰이미지5-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c06.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c07.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c08.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c09.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c10.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c11.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c12.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c13.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c14.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c15.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c16.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c17.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c18.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c19.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c20.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c21.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c22.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/c23.jpg)"></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-black"></div>
+                    <div class="swiper-button-prev swiper-button-black"></div>
+                </div>
+                <div class="swiper-container gallery-thumbs two">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m0101.jpg)"></div><!--콜렉션 mo 작은이미지1-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m0202.jpg)"></div><!--콜렉션 mo 작은이미지2-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m0303.jpg)"></div><!--콜렉션 mo 작은이미지3-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m0404.jpg)"></div><!--콜렉션 mo 작은이미지4-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m0505.jpg)"></div><!--콜렉션 mo 작은이미지5-->
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m0606.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m0707.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m0808.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m0909.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m1010.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m1111.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m1212.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m1313.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m1414.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m1515.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m1616.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m1717.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m1818.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m1919.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m2020.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m2121.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m2222.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(http://ziodeo.com/img/171101/m2323.jpg)"></div>
+                    </div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="../dist/js/swiper.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                var galleryTop = new Swiper('.gallery-top.two', {
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    spaceBetween: 10,
+                });
+                var galleryThumbs = new Swiper('.gallery-thumbs.two', {
+                    spaceBetween: 10,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    touchRatio: 0.2,
+                    slideToClickedSlide: true
+                });
+                galleryTop.params.control = galleryThumbs;
+                galleryThumbs.params.control = galleryTop;
+                
+                </script>
+
+
+
+
+
+                
+            </div>
+        </div>
+        <!--//본문-->
+    </div>
+
+	<!--푸터-->
+    <footer id="footer">
+        <p class="copyright">Copyright ZIODEO co., ltd. All right reserved.</p>
+    </footer>
+    <!--//푸터-->
+
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>지오데오 홈페이지</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width=device-width, maximum-scale = 1, minimum-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" type="text/css" href="/css/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/css/colorbox.css" media="all" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!--<script src="js/default.js"></script>-->
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+    <!-- bxSlider Javascript file -->
+    <script src="/js/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/css/jquery.bxslider.css" rel="stylesheet" />
+
+	<script>
+		$(function(){
+      			//Keep track of last scroll
+      			var lastScroll = 0;
+      			$(window).scroll(function(event){
+          			//Sets the current scroll position
+          			var st = $(this).scrollTop();
+          			//Determines up-or-down scrolling
+          			if (st > lastScroll){
+             			//Replace this with your function call for downward-scrolling
+             			console.log("DOWN");
+				        $("#mo > header").removeClass("fixed");
+          			}
+          			else {
+             			//Replace this with your function call for upward-scrolling
+             			console.log("UP");
+                         $("#mo > header").addClass("fixed");
+          			}
+          			//Updates scroll position
+          			lastScroll = st;
+      			});
+
+				$('.bxslider').bxSlider({
+					pagerCustom: '#bx-pager'
+				});
+
+				//모바일 본문일 때
+                function open_chatroom(){
+                    var windowWidth = $( window ).width();
+                    if(windowWidth < 769) {
+                        console.log("mo");
+                        $("#content").removeClass();
+                        $("#content").addClass("mo");
+                    } else {
+                        console.log("pc");
+                        $("#content").removeClass();
+                        $("#content").addClass("pc");
+                    }
+                };
+                open_chatroom();
+
+    		});
+	</script>
+</head>
+<body class="bgsub">
+
+    <div id="pc">
+        <!--헤더-->
+        <header class="header">
+            <h1>
+                <a href="/index.html">
+                    <!--<span class="tit">Z &nbsp;I &nbsp;O &nbsp;D &nbsp;E &nbsp;O</span> 
+                        <span class="line">&nbsp;</span>
+                        <span class="txt">A NEW STYLE EVERY DAY</span> 
+                        <span class="since">SINCE 1980</span>-->
+                        <img src="/img/logo.png" alt=""/>
+                </a>
+            </h1>
+            <ul>
+                <li><a href="/html/about.html">About us</a></li>
+                <li><a href="/html/collection.html">Collection</a></li>
+                <li><a href="/html/shop.html">Shop info</a></li>
+                <li><a href="/html/faq.html">FAQ</a></li>
+            </ul>
+        </header>
+        <!--//헤더-->
+    </div>
+
+    <div id="mo">
+        <!--헤더-->
+        <header class="header">
+            <h1>
+                <a href="/index.html">
+                    <img src="/img/logo.png" alt=""/>
+                </a>
+            </h1>
+            <ul>
+				<li class="on"><a href="/html/collection.html">Collection</a></li>
+                <li><a href="/html/about.html">About us</a></li>
+                <li><a href="/html/shop.html">Shop info</a></li>
+				<li><a href="/html/faq.html">FAQ</a></li>
+            </ul>
+        </header>
+        <!--//헤더-->
+    </div>
+
+	<!--본문-->
+	<div id="content">
+		<div class="inner">
+            
+			<ul class="bxslider">
+				<li><img src="/img/big_coll01.jpg" /></li>
+				<li><img src="/img/big_coll01.jpg" /></li>
+				<li><img src="/img/big_coll01.jpg" /></li>
+                <li><img src="/img/big_coll01.jpg" /></li>
+                <li><img src="/img/big_coll01.jpg" /></li>
+			</ul>
+            <p class="silverzd"><img src="/img/silverzd.png" alt=""/></p>
+			<div id="bx-pager">
+				<a data-slide-index="0" href=""><img src="/img/small_coll01.jpg" /></a>
+				<a data-slide-index="1" href=""><img src="/img/small_coll01.jpg" /></a>
+				<a data-slide-index="2" href=""><img src="/img/small_coll01.jpg" /></a>
+                <a data-slide-index="3" href=""><img src="/img/small_coll01.jpg" /></a>
+                <a data-slide-index="4" href=""><img src="/img/small_coll01.jpg" /></a>
+			</div>
+
+			<!--푸터-->
+			<footer id="footer">
+				<p class="copyright">Copyright ZIODEO co., ltd. All right reserved.</p>
+			</footer>
+			<!--//푸터-->
+		</div>
+	</div>
+	<!--//본문-->
+
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>지오데오 홈페이지</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width=device-width, maximum-scale = 1, minimum-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" type="text/css" href="/css/common.css" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!--<script src="js/default.js"></script>-->
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="/js/respond.min.js"></script>
+	<![endif]-->
+
+    <!-- jQuery library (served from Google) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="/js/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/css/jquery.bxslider.css" rel="stylesheet" />
+
+    <script>
+
+	$(window).load(function(){
+
+	    $('.bxslider').bxSlider({
+		auto: true,
+		mode: 'fade'
+             });
+
+            var theWindow = $(window),
+                $bg = $(".mainImg"),
+                aspectRatio = $bg.width() / $bg.height();
+
+            function resizeBg() {
+                if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+                    $bg.removeClass("bgwidth").removeClass("bgheight").addClass("bgheight");
+                } else {
+                    $bg.removeClass("bgwidth").removeClass("bgheight").addClass("bgwidth");
+                }
+            }
+            theWindow.resize(resizeBg).trigger("resize");
+        });
+    </script>
+
+</head>
+<body>
+    <div id="main">
+
+        <ul class="bxslider">
+          <li><img src="/img/bg_main1.jpg" id="bg1" class="mainImg" alt="메인 이미지1" /></li><!-- 메인 bg 이미지 -->
+          <li><img src="/img/bg_main2.jpg" id="bg2" class="mainImg" alt="메인 이미지2" /></li>
+          <li><img src="/img/bg_main3.jpg" id="bg3" class="mainImg" alt="메인 이미지3" /></li>
+        </ul>
+        
+        <!--헤더-->
+        <header class="header">
+            <h1><a href="/index.html">ZIODEO <span>A NEW STYLE FOR YOU EVERY DAY</span></a></h1>
+            <ul>
+                <li><a href="/html/about.html">About us</a></li>
+                <li><a href="/html/collection.html">Collection</a></li>
+                <li><a href="/html/shop.html">Shop info</a></li>
+                <li><a href="/html/faq.html">FAQ</a></li>
+            </ul>
+        </header>
+        <!--//헤더-->
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+

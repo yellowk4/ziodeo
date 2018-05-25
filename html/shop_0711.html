@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>지오데오</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width=device-width, maximum-scale = 1, minimum-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="여성의류 전문 브랜드, 매일 당신을 위한 새로운 스타일 , 숙녀복, 여성복, 30, 40대 캐주얼, 미시옷, 엄마옷, 데일리룩, 인견, 전국매장 안내" />
+
+	<meta property="og:title" content="지오데오">
+    <meta property="og:description" content="여성의류 전문 브랜드, 매일 당신을 위한 새로운 스타일 , 숙녀복, 여성복, 30, 40대 캐주얼, 미시옷, 엄마옷, 데일리룩, 인견, 전국매장 안내">
+
+	<link rel="canonical" href="http://www.ziodeo.com">
+
+    <link rel="stylesheet" type="text/css" href="/css/common.css" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!--<script src="js/default.js"></script>-->
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<script>
+		$(function(){
+      			//Keep track of last scroll
+      			var lastScroll = 0;
+      			$(window).scroll(function(event){
+          			//Sets the current scroll position
+          			var st = $(this).scrollTop();
+          			//Determines up-or-down scrolling
+          			if (st > lastScroll){
+             			//Replace this with your function call for downward-scrolling
+             			console.log("DOWN");
+				        $("#mo > header").removeClass("fixed");
+          			}
+          			else {
+             			//Replace this with your function call for upward-scrolling
+             			console.log("UP");
+                         $("#mo > header").addClass("fixed");
+          			}
+          			//Updates scroll position
+          			lastScroll = st;
+      			});
+
+				//모바일 본문일 때
+				function open_chatroom(){
+					var windowWidth = $( window ).width();
+					if(windowWidth < 769) {
+						console.log("mo");
+						$("#content").removeClass();
+						$("#content").addClass("mo");
+					} else {
+						console.log("pc");
+						$("#content").removeClass();
+						$("#content").addClass("pc");
+					}
+				};
+				open_chatroom();
+			});
+	</script>
+
+</head>
+<body class="bgsub">
+   
+		<div id="pc">
+			<!--헤더-->
+			<header class="header">
+				<h1>
+					<a href="/index.html">
+						<!--<span class="tit">Z &nbsp;I &nbsp;O &nbsp;D &nbsp;E &nbsp;O</span> 
+                        <span class="line">&nbsp;</span>
+                        <span class="txt">A NEW STYLE EVERY DAY</span> 
+                        <span class="since">SINCE 1980</span>-->
+                        <img src="/img/logo.png" alt=""/>
+					</a>
+				</h1>
+				<ul>
+					<li><a href="/html/about.html">About us</a></li>
+					<li><a href="/html/collection.html">Collection</a></li>
+					<li><a href="/html/shop.html">Shop info</a></li>
+					<li><a href="/html/faq.html">FAQ</a></li>
+				</ul>
+			</header>
+			<!--//헤더-->
+			<!--본문-->
+			<div id="content">
+				<div class="inner">
+					<div class="bgwhite">
+						<div class="shopwrap">
+							<!-- 동영상 삽입 -->
+							<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/lQZTqF3yXyE" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+							<!-- //동영상 삽입 -->
+
+							<ul class="place">
+								<li>
+									<div class="titwrap">
+										<p class="tit">&lt;서울 구로점&gt;</p>
+										<p>서울특별시 구로구 구로동로 26길 3 (구로동 730-59) <span class="tel">Tel : 02-858-5931</span></p>
+									</div>
+									<div class="mapwrap">
+										<div>
+											<img src="/img/namguro.jpg" alt="서울 구로점 오프라인 매장"//><!-- 지점 사진 넣는곳 -->
+										</div>
+										<div id="map_view" style="width:50%;height:300px;">
+											<a href="http://map.naver.com/?searchCoord=b8740627e674f17834bf2af014ca2762cc61dfa493cf80027ded35b21581a86e&query=7ISc7Jq47Yq567OE7IucIOq1rOuhnOq1rCDqtazroZzrj5nroZwgMjbquLggMyAo6rWs66Gc64%2BZIDczMC01OSk%3D&menu=location&tab=1&lng=c1617fe1ae99aa71fa1e096030674e49&mapMode=0&mpx=09200118%3A37.554522%2C127.0696%3AZ11%3A0.0344321%2C0.0142961&lat=2d66f0af817ff439a523c4cbade33d71&dlevel=14&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1498310219706_126621454" width="100%" height="300" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="titwrap">
+										<p class="tit">&lt;경기도 부천점&gt;</p>
+										<p>경기도 부천시 경인로 219 (심곡본동 542-5) <span class="tel">Tel : 032-656-5931</span></p>
+									</div>
+									<div class="mapwrap">
+										<div>
+											<img src="/img/buchun.jpg" alt="서울 부천점 오프라인 매장"//><!-- 지점 사진 넣는곳 -->
+										</div>
+										<div id="map_view2" style="width:50%;height:300px;">
+											<a href="http://map.naver.com/?searchCoord=e08b65d612f769111f18ec8b8692672951e71b963cf24a4286a790d0848f641e&query=6rK96riw64%2BEIOu2gOyynOyLnCDqsr3snbjroZwgMjE5&menu=location&tab=1&lng=85d2f3e5b57211099e62d5c331da9ec7&mapMode=0&mpx=09650621%3A37.4896205%2C126.9912978%3AZ11%3A0.0344248%2C0.0154453&lat=211cad31046bb2eaf1de407b984adfcb&dlevel=14&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1498528918083_-1921923463" width="100%" height="300" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="titwrap">
+										<p class="tit">&lt;부산 부평점&gt;</p>
+										<p>부산광역시 중구 중구로 33번길 12 (부평동1가 23-27) <span class="tel">Tel : 051-242-4021</span></p>
+									</div>
+									<div class="mapwrap">
+										<div>
+											<img src="/img/busan.jpg" alt="서울 부산점 오프라인 매장"//><!-- 지점 사진 넣는곳 -->
+										</div>
+										<div id="map_view3" style="width:50%;height:300px;">
+											<a href="http://map.naver.com/?searchCoord=fc468c9592d9925545e20afbe5d00af5e82362683d40d7d00b5adb9ed1a1d126&query=67aA7IKw6rSR7Jet7IucIOykkeq1rCDspJHqtazroZwgMzPrsojquLggMTI%3D&menu=location&tab=1&lng=a64703017926135201cff1d4d1326774&mapMode=0&mpx=02190111%3A37.4834544%2C126.7798624%3AZ14%3A0.0043087%2C0.0019233&lat=32d9eaa95ed7e8b70ded19774dac50e4&dlevel=14&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1498529080891_-1979482514" width="100%" height="300" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!--푸터-->
+					<footer id="footer">
+						<p class="copyright">Copyright ZIODEO co., ltd. All right reserved.</p>
+					</footer>
+					<!--//푸터-->
+				</div>
+			</div>
+			<!--//본문-->
+		</div>
+
+		<div id="mo">
+			<!--헤더-->
+			<header class="header">
+				<h1>
+					<a href="/index.html">
+						<img src="/img/logo.png" alt=""/>
+					</a>
+				</h1>
+				<ul>
+					<li class="on"><a href="/html/shop.html">Shop info</a></li>
+					<li><a href="/html/about.html">About us</a></li>
+					<li><a href="/html/collection.html">Collection</a></li>
+					<li><a href="/html/faq.html">FAQ</a></li>
+				</ul>
+			</header>
+			<!--//헤더-->
+			<!--본문-->
+			<div id="content">
+				<div class="inner">
+					<div class="bgwhite">
+						<div class="shopwrap">
+							<!-- 동영상 삽입 -->
+							<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/lQZTqF3yXyE" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+							<!-- //동영상 삽입 -->
+
+							<ul class="place">
+								<li>
+									<div class="titwrap">
+										<p class="tit">&lt;서울 구로점&gt;</p>
+										<p>서울특별시 구로구 구로동로 26길 3 (구로동 730-59) <span class="tel">Tel : 02-858-5931</span></p>
+									</div>
+									<div class="mapwrap">
+										<div>
+											<img src="/img/namguro.jpg" alt="서울 구로점 오프라인 매장" class="mo_img_none"/><!-- 지점 사진 넣는곳 -->
+										</div>
+										<div id="map_view" style="width:50%;height:300px;">
+											<a href="https://m.map.naver.com/search2/search.nhn?query=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B5%AC%EB%A1%9C%EA%B5%AC%20%EA%B5%AC%EB%A1%9C%EB%8F%99%EB%A1%9C%2026%EA%B8%B8%203%20(%EA%B5%AC%EB%A1%9C%EB%8F%99%20730-59)&siteLocation=&queryRank=&type=#/map" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1498310219706_126621454" width="346" height="300" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="titwrap">
+										<p class="tit">&lt;경기도 부천점&gt;</p>
+										<p>경기도 부천시 경인로 219 (심곡본동 542-5) <span class="tel">Tel : 032-656-5931</span></p>
+									</div>
+									<div class="mapwrap">
+										<div>
+											<img src="/img/buchun.jpg" alt="서울 부천점 오프라인 매장" class="mo_img_none"/><!-- 지점 사진 넣는곳 -->
+										</div>
+										<div id="map_view2" style="width:50%;height:300px;">
+											<a href="https://m.map.naver.com/search2/search.nhn?query=%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EB%B6%80%EC%B2%9C%EC%8B%9C%20%EA%B2%BD%EC%9D%B8%EB%A1%9C%20219&siteLocation=&queryRank=&type=#/map" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1498528918083_-1921923463" width="346" height="300" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="titwrap">
+										<p class="tit">&lt;부산 부평점&gt;</p>
+										<p>부산광역시 중구 중구로 33번길 12 (부평동1가 23-27) <span class="tel">Tel : 051-242-4021</span></p>
+									</div>
+									<div class="mapwrap">
+										<div>
+											<img src="/img/busan.jpg" alt="서울 부산점 오프라인 매장" class="mo_img_none"/><!-- 지점 사진 넣는곳 -->
+										</div>
+										<div id="map_view3" style="width:50%;height:300px;">
+											<a href="https://m.map.naver.com/search2/search.nhn?query=%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EC%A4%91%EA%B5%AC%EB%A1%9C%2033%EB%B2%88%EA%B8%B8%2012&siteLocation=&queryRank=&type=#/map" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1498529080891_-1979482514" width="346" height="300" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!--푸터-->
+					<footer id="footer">
+						<p class="copyright">Copyright ZIODEO co., ltd. All right reserved.</p>
+					</footer>
+					<!--//푸터-->
+				</div>
+			</div>
+			<!--//본문-->
+		</div>
+
+        
+
+</body>
+
+</html>
+
+
+
+
+
+

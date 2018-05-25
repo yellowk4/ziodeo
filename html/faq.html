@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>지오데오</title>
+	<meta charset="utf-8" />
+    <META http-equiv="Expires" content="-1"> 
+    <META http-equiv="Pragma" content="no-cache"> 
+    <META http-equiv="Cache-Control" content="No-Cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width=device-width, maximum-scale = 1, minimum-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="여성의류 전문 브랜드, 매일 당신을 위한 새로운 스타일 , 숙녀복, 여성복, 30, 40대 캐주얼, 미시옷, 엄마옷, 데일리룩, 인견, 전국매장 안내" />
+
+    <meta property="og:title" content="지오데오">
+    <meta property="og:description" content="여성의류 전문 브랜드, 매일 당신을 위한 새로운 스타일 , 숙녀복, 여성복, 30, 40대 캐주얼, 미시옷, 엄마옷, 데일리룩, 인견, 전국매장 안내">
+
+    <link rel="canonical" href="http://www.ziodeo.com">
+
+    <link rel="stylesheet" type="text/css" href="/css/common.css" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/js/ui.js"></script>
+    <!--<script src="js/default.js"></script>-->
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<script>
+		$(function(){
+      			//Keep track of last scroll
+      			var lastScroll = 0;
+      			$(window).scroll(function(event){
+          			//Sets the current scroll position
+          			var st = $(this).scrollTop();
+          			//Determines up-or-down scrolling
+          			if (st > lastScroll){
+             			//Replace this with your function call for downward-scrolling
+             			console.log("DOWN");
+				        $("#mo > header").removeClass("fixed");
+          			}
+          			else {
+             			//Replace this with your function call for upward-scrolling
+             			console.log("UP");
+                         $("#mo > header").addClass("fixed");
+          			}
+          			//Updates scroll position
+          			lastScroll = st;
+      			});
+
+                //모바일 본문일 때
+                function open_chatroom(){
+                    var windowWidth = $( window ).width();
+                    if(windowWidth < 769) {
+                        console.log("mo");
+                        $("#content").removeClass();
+                        $("#content").addClass("mo");
+                    } else {
+                        console.log("pc");
+                        $("#content").removeClass();
+                        $("#content").addClass("pc");
+                    }
+                };
+                open_chatroom();
+    		});
+	</script>
+
+</head>
+<body class="bgsub">
+
+    <div id="pc">
+        <!--헤더-->
+        <header class="header">
+            <h1>
+                <a href="/index.html">
+                    <!--<span class="tit">Z &nbsp;I &nbsp;O &nbsp;D &nbsp;E &nbsp;O</span> 
+                        <span class="line">&nbsp;</span>
+                        <span class="txt">A NEW STYLE EVERY DAY</span> 
+                        <span class="since">SINCE 1980</span>-->
+                        <img src="/img/logo.png" alt=""/>
+                </a>
+            </h1>
+            <ul>
+                <li><a href="/html/about.html">About us</a></li>
+                <li><a href="/html/collection.html">Collection</a></li>
+                <li><a href="/html/shop.html">Shop info</a></li>
+                <li><a href="/html/faq.html">FAQ</a></li>
+            </ul>
+        </header>
+        <!--//헤더-->
+
+        <!--본문-->
+        <div id="content">
+            <div class="inner">
+                <img src="/img/img_faq.jpg" alt=""/>
+
+                <!--푸터-->
+                <footer id="footer">
+                    <p class="copyright">Copyright ZIODEO co., ltd. All right reserved.</p>
+                </footer>
+                <!--//푸터-->
+            </div>
+        </div>
+        <!--//본문-->
+    </div>
+
+    <div id="mo">
+        <!--헤더-->
+        <header class="header">
+            <h1>
+                <a href="/index.html">
+                    <img src="/img/logo.png" alt=""/>
+                </a>
+            </h1>
+            <ul>
+                <li class="on"><a href="/html/faq.html">FAQ</a></li>
+                <li><a href="/html/about.html">About us</a></li>
+                <li><a href="/html/collection.html">Collection</a></li>
+                <li><a href="/html/shop.html">Shop info</a></li>
+            </ul>
+        </header>
+        <!--//헤더-->
+
+        <!--본문-->
+        <div id="content">
+            <div class="inner">
+                <img src="/img/mbfaq.jpg" alt=""/>
+
+                <!--푸터-->
+                <footer id="footer">
+                    <p class="copyright">Copyright ZIODEO co., ltd. All right reserved.</p>
+                </footer>
+                <!--//푸터-->
+            </div>
+        </div>
+        <!--//본문-->
+    </div>
+
+    
+
+</body>
+</html>
+
+
+
+
+
+
