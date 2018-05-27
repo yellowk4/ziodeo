@@ -227,7 +227,7 @@ html, body {
 /*.swiper-container{width: 1400px;}*/
 
 /*footer*/
-#footer {position: absolute; bottom:0; left:0; width: 100%; padding: 10px 0; text-align: center;}
+#footer {position: absolute !important; bottom:0; left:0; width: 100%; padding: 10px 0; text-align: center;}
 #footer .copyright {font-size: 15px; color: #9e9696;}
 
 /* shop 추가 */
