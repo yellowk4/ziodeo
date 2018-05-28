@@ -1,0 +1,23 @@
+{
+    "host": "ziodeomall.cafe24.com",
+    "username": "ziodeomall",
+    "password": "zd7810711",
+    "remotePath": "/www",
+    "protocol": "ftp",
+    "port": 0,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode",
+        "/.vscode/*",
+        "/.vscode/chrome",
+        "/.vscode/.key",
+        "/.vscode/ftp-kr.task.json",
+        "/.vscode/ftp-kr.error.log",
+        "/.vscode/ftp-kr.sync.*.json",
+        "/.vscode/ftp-kr.diff.*"
+    ]
+}
